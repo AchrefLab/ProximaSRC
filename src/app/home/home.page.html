@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="login-header" >
+    <div class="padding">
+      <img class="grandlogo-img" src="../../assets/img/grandlogo.png">
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="heading-column-lr">
+      <h1 class="big-heading">Connexion</h1>
+    </div>
+
+    <ion-item transparent>
+      <ion-input [(ngModel)]="Email" placeholder="Adresse email" type="text"></ion-input>
+      <ion-icon name="person" style="color: #fcce06"></ion-icon>
+    </ion-item>
+    <ion-item transparent>
+      <ion-input [(ngModel)]="Password" placeholder="Mot de passe" type="Password"></ion-input>
+      <ion-icon name="lock-closed" style="color: #fcce06"></ion-icon>
+    </ion-item>
+    <div linespace></div>
+    <ion-label class="forgetpassword">Mot de passe oublié ?</ion-label>
+
+    <div linespace></div>
+    <ion-button class="ion-button-class" expand="block" fill="solid" >Se connecter</ion-button>
+    <div linespace></div>
+    <ion-label class="ion-text-center" (click)='onClickRegister()'>Vous n'avez pas un compte ?</ion-label>
+  </div>
+</ion-content>

@@ -1,0 +1,52 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content >
+  <ion-card class="ion-no-margin">
+    <ion-img src="assets/img/grandlogo.png"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Créer un compte</ion-card-title>
+    </ion-card-header>
+ 
+ <ion-card-content>
+   <div class="wrapform">
+    <ion-item>
+       
+      <ion-input type="text" name="nom" [{ngModle}]="nom" placeholder="Nom" required></ion-input>
+    </ion-item>
+    <ion-item>
+       
+      <ion-input type="text" name="prenom" [{ngModle}]="prenom" placeholder="Prénom" required></ion-input>
+    </ion-item>
+     <ion-item>
+       
+       <ion-input type="email" name="email" [{ngModle}]="email" placeholder="Adresse mail" required></ion-input>
+     </ion-item>
+     <ion-item>
+      <ion-input type="password" name="mdp" [{ngModle}]="mdp" placeholder="Mot de passe" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" name="confmdp" [{ngModle}]="confmdp" placeholder="Confirmer mot de passe" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" name="adresse" [{ngModle}]="adresse" placeholder="Adresse postal" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" name="ville" [{ngModle}]="ville" placeholder="Ville" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" name="cp" [{ngModle}]="cp" placeholder="Code postal" required></ion-input>
+    </ion-item>
+   </div>
+   <ion-button type="submit" fill="solid" class="btnregister">
+    Valider
+  </ion-button>
+ </ion-card-content>
+</ion-card>
+</ion-content>

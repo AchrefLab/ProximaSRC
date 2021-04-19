@@ -1,0 +1,7 @@
+{
+  "name": "Proxima",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
