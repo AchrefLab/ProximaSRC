@@ -1,28 +1,28 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-   
+
+    <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button tab="home" style="font-size:7px">
+          <ion-img src="assets/img/logo.png"></ion-img>
+
+        </ion-tab-button>
+        <ion-tab-button tab="search" style="font-size:7px">
+          <ion-item>
+            <ion-label>
+              <ion-icon size="medium" color="light" name="notifications-sharp"
+                style="margin-top: 15px;"></ion-icon>
+              <ion-icon size="medium" color="light" name="location-sharp"
+                style="margin-left: 10px;margin-top: 15px;"></ion-icon>
+            </ion-label>
+          </ion-item>
+
+        </ion-tab-button>
 
 
+      </ion-tab-bar>
+    </ion-tabs>
 
-   <ion-tabs >
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" style="font-size:7px">
-        <ion-img src="assets/img/logo.png" width="400px" height="400px"></ion-img>
-         
-      </ion-tab-button>
-      <ion-tab-button tab="search" style="font-size:7px">
-        <ion-item>
-          <ion-label>
-            <ion-icon name="notifications-sharp"></ion-icon>
-            <ion-icon name="location-sharp"></ion-icon>
-          </ion-label>
-        </ion-item>
-      
-      </ion-tab-button>
-
-
-    </ion-tab-bar>
-  </ion-tabs>
   </ion-toolbar>
 
 
@@ -30,54 +30,79 @@
 
 
 <ion-content>
+  <!-- navbar -->
+  <ion-segment scrollable value="heart">
+    <ion-segment-button value="home">
+      <ion-label style="font-size: 10px;">Offres</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-label style="font-size: 10px;">Actualités</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-label style="font-size: 10px;">Demandes</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <!-- content -->
+  <div class="postActualite">
+    <ion-item>
 
-  <!-- <ng-container  *ngComponentOutlet="dynamiqueComponnent"></ng-container> -->
-  <ion-tabs >
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home" style="font-size:7px">
-        <ion-icon name="home-sharp"></ion-icon>
-        <ion-label>Accueil</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="search" style="font-size:7px">
-        <ion-icon name="search"></ion-icon>
-        <ion-label>Recherche</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="post" style="font-size:7px">
-        <ion-icon name="add-circle-outline"  style="color: white;"></ion-icon>
-        <ion-label style="color: white;">Publier</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="mail" style="font-size:7px">
-        <ion-icon name="mail-outline"></ion-icon>
-        <ion-label>Message</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="logout" style="font-size:7px">
-        <ion-icon name="log-out-outline"></ion-icon>
-        <ion-label>Deconnexion</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+      <img class="imgProfilPoster" src="assets/img/Image1.png" />
+      <ion-input id="itemInput" placeholder="Titre"> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" id="PostInput" placeholder="Que voulez vous publier ?">
+
+      </ion-input>
+      
+ 
+    </ion-item>
+    <ion-grid class="pieceJointe">
+      <ion-row>
+        <ion-col size="9">
+
+          <p>hhhhhhhh</p>
+
+        </ion-col>
+        <ion-col size="3">
+
+          <input type="file" (change)="onFileSelected($event)" id="fileInput"
+          style="display: none;" />
+        <label for="fileInput" icon-only ion-button>
+          <ion-icon size="large" style="cursor: pointer;" name="attach-outline"></ion-icon>
+        </label>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  
+
+<ion-card class="annonces" style="padding: 0 !important">
+  <ion-card-header>
+    <ion-card-title>
+     <div>
+      <img class="imgProfilPoster" src="assets/img/Image1.png" style=" display: inline;" />
+      <p class="nomProfil"  style=" display: inline;">Alison Rohee</p>
+      <p class="titreAnnonce"  style=" display: inline;">Marathon </p>
+    </div>
+    </ion-card-title>
+   
+  </ion-card-header>
+  <ion-card-content>
+<p>Nous organisons un Marathon de 2 km aujourd'hui à 11H.  Vous êtes tous invité à y participer njjjjjjjjjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk </p>
+  </ion-card-content>
+  <!-- <ion-button expand="block" color="dark" style="margin-bottom: 20px;" (click)='onClickArtist(artist.name)'>Voir albums</ion-button> -->
+  <ion-item>
+
+    <ion-icon name="location-sharp" id="location"></ion-icon>
+    <label for="location">Xx rue Xxxx 72000 Le Mans</label>
+    <ion-icon name="checkmark-sharp" id="done"></ion-icon>
+    <label for="done">Participer</label>
+  </ion-item>
+</ion-card>
+
+ 
+
 </ion-content>
 
-<!-- <ion-segment scrollable value="heart">
-  <ion-segment-button value="home">
-    <ion-icon name="home"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="heart">
-    <ion-icon name="heart"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="pin">
-    <ion-icon name="pin"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="star">
-    <ion-icon name="star"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="call">
-    <ion-icon name="call"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="globe">
-    <ion-icon name="globe"></ion-icon>
-  </ion-segment-button>
-  <ion-segment-button value="basket">
-    <ion-icon name="basket"></ion-icon>
-  </ion-segment-button>
-</ion-segment> -->

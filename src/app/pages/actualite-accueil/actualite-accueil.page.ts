@@ -11,10 +11,20 @@ export class ActualiteAccueilPage implements OnInit {
   dynamiqueComponnent: any
   
   constructor(private router:ActivatedRoute) { }
+  // filename:string="";
+  // type:string="";
 
   ngOnInit() {
     this.dynamiqueComponnent=NavbarComponent;
   
   }
+  // onFileSelected(fileInput: any){
+ 
+  //   this.filename=fileInput.target.files[0].name;
+  // }
+  // handleFileInput(event) {
+  //   console.log(event);
+  //   this.filename = event.target.files[0].name;
+  // }
 
 }

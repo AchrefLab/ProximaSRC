@@ -1,7 +1,98 @@
-ion-tabs, ion-content{
+ion-tabs, ion-toolbar, ion-header{
     --ion-background-color: #2B2B2B !important;
-    
+    --background: #2B2B2B !important;
+  
 }
-ion-tab-button {
-    color: #FCCE06 !important;
+
+
+ion-content{
+    --ion-background-color: #6A6A6A !important;
+  
+}
+
+
+
+
+ion-segment{
+    --background: #2B2B2B !important;
+    border-radius : 0 !important;
+    color: white !important;
+    padding-top: 18px;
+    ion-segment-button {
+        --color:white !important;
+        // --color-checked: #FCCE06 !important;
+       --background-hover: #FCCE06 !important;
+       --background-focused : #FCCE06 !important;
+      --indicator-color : #FCCE06 !important;
+    }
+   
+}
+.postActualite{
+    border: 2px solid black;
+//    padding: 10px;
+  
+    margin: 20px  15px;
+    height: 200px;
+  ion-item{
+    --border-color:#6A6A6A;
+    img{
+        border-radius: 300px ; 
+         width: 30px ;
+         height: 30px;
+     }
+    #itemInput {
+         border-radius: 40px 40px 40px 40px;
+         background-color: #2B2B2B;
+         height: 30px;
+         padding: 10px !important;
+         color: white ;
+         font-size: 12px;
+         margin-left: 5px;
+     }
+  }
+  
+   #PostInput{
+    background-color: #2B2B2B;
+    padding: 0 10px !important;
+    height: 60px; 
+    --padding-top:0;
+    color: white ;
+    font-size: 12px; 
+    
+   }   
+    
+   }
+   .pieceJointe{
+       margin: 0 9px;
+   height: 50px;
+   border: 2px solid #2B2B2B !important;
+   }
+.annonces{
+  
+    border-radius: 9px;
+    --ion-background-color: #2B2B2B !important;
+    img{
+        border-radius: 300px ; 
+         width: 30px ;
+         height: 30px;
+     }
+}
+.nomProfil{
+    color: #FCCE06;
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 7px;
+}
+.titreAnnonce{
+    font-weight: bold;
+position:absolute;
+right: 0;
+ color: white;
+ font-size: 11px;
+ ion-item{
+    width:100%;
+    height:100%;
+    --border-style:cyan !important;
+ }
+
 }
